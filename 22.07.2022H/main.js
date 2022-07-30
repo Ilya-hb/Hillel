@@ -46,11 +46,12 @@ let guessingGame = (tries) => {
         if (isGuessed === true) return console.log(`You know the answer. What do you want from me?`);
         if (num > random) console.log(`Your guess is too high!`);
         else if (num < random) console.log(`Your guess is too low!`);
+
+        if (tries === 0) console.log(`No more guesses, the answer was ${random}! Please start a new game`); 
         else if (num === random) {
             console.log(`You got it!`);
             isGuessed = true;
         }
-        if (tries === 0) console.log(`No more guesses, the answer was ${random}! Please start a new game`);
         tries--;
     }
 }
