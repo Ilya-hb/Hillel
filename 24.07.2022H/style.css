@@ -1,0 +1,64 @@
+* {
+    font-family: "Roboto", sans-serif;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.output-container {
+    margin: 20px auto;
+    width: 50%;
+    border-radius: 5px;
+    border: 2px solid gray;
+    text-align: left;
+    padding: 20px;
+}
+
+p {
+    text-align: left;
+}
+
+span {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+b {
+    font-weight: bold;
+}
+
+
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin: 20px auto;
+    text-align: center;
+    padding: 20px;
+}
+
+th {
+    font-weight: bold;
+}
+
+
+
+img {
+    width: 200px;
+    height: 300px;
+}
