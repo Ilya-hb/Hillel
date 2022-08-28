@@ -24,7 +24,7 @@ const getFact = function () {
                 if (i < data.text.length) {
                     insertText.innerHTML += data.text.charAt(i);
                     i++;
-                    setTimeout(typeWritter, 50); //TODO: add wait for setTimeout and disable getFact button, then enable after.
+                    setTimeout(typeWritter, 30); //TODO: add wait for setTimeout and disable getFact button, then enable after.
                 }
             }
             return typeWritter();
@@ -42,7 +42,7 @@ const getRdmFact = function () {
             if (i < data.text.length) {
                 insertText.innerHTML += data.text.charAt(i);
                 i++;
-                setTimeout(typeWritter, 50);
+                setTimeout(typeWritter, 30);
             }
         }
         return typeWritter();

@@ -25,6 +25,7 @@ h1 {
     color: white;
 }
 
+
 .container {
     max-width: 1280px;
     margin: 150px auto;
@@ -34,12 +35,15 @@ h1 {
     padding: 30px;
 }
 
+
 .num-container {
     padding: 20px;
     width: 40%;
     margin: 0 auto;
     background-color: rgb(2, 89, 2);
 }
+
+
 
 #matrix {
     position: fixed;
@@ -63,9 +67,10 @@ select option {
     background-color: black;
 }
 
-button, select{
+button, select {
     cursor: pointer;
 }
+
 .inp {
     padding: 5px 10px;
     transition-property: focus;
@@ -121,12 +126,19 @@ h2 {
     transition: 0.3s;
 }
 
-span {
-    animation: blink 1s infinite;
-}
 
-@keyframes blink {
-    to {
-        opacity: .0;
+
+@media (max-width: 690px) {
+    .container {
+        max-width: 100%;
+        margin: 50px auto;
+    }
+
+    .num-container {
+        width: 90%;
+    }
+
+    .btn {
+        margin: 15px;
     }
 }
