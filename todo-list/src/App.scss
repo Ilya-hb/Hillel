@@ -1,0 +1,35 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url(./fonts/Montserrat-Regular.ttf);
+}
+
+$primary-color: rgb(38, 38, 38);
+* {
+  color: aliceblue;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background-color: $primary-color;
+}
+.inp-btn {
+  border: 1px solid aliceblue;
+  border-radius: 5px;
+  color: aliceblue;
+  background-color: transparent;
+
+  &:hover {
+    background-color: aliceblue !important;
+    color: $primary-color !important;
+  }
+}
+.input {
+  background-color: transparent;
+  color: aliceblue;
+  transition: 0.3s;
+  max-width: 300px;
+}
+.form-control:focus {
+  border-color: #ffffff;
+  box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.25);
+}
