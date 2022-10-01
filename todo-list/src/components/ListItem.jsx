@@ -8,7 +8,7 @@ class ListItem extends Component {
         this.state = {
             backgroundColor: '',
             textDecoration: ''
-        }``
+        }
     }
 
     markDone() {
@@ -22,7 +22,7 @@ class ListItem extends Component {
                 backgroundColor: '',
                 textDecoration: ''
             });
-        }
+        } 
         // console.log(this.props);
     }
     removeItem() {
@@ -42,7 +42,6 @@ class ListItem extends Component {
                     <button className='btn btn-danger position-absolute list-btn' onClick={this.removeItem}>Delete</button>
                 </li>
             </>
-
         )
     }
 }

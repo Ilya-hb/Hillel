@@ -16,7 +16,14 @@ class Input extends Component {
         });
     }
     createTask() {
-        this.props.onCreate(this.state.value)
+        if (this.state.value !== '') {
+            this.props.onCreate(this.state.value)
+            // console.log('not empty');
+        } else {
+            // console.log('empty');
+            return;
+        }
+
     }
     render() {
         return (
