@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 
 class Input extends Component {
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
         this.state = {
             value: ''
         };
@@ -11,7 +11,6 @@ class Input extends Component {
         this.createTask = this.createTask.bind(this);
     }
     addItem(e) {
-
         this.setState({
             value: e.target.value
         });

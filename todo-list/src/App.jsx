@@ -9,6 +9,7 @@ class App extends React.Component {
       list: []
     };
     this.createTask = this.createTask.bind(this);
+    this.removeItem = this.removeItem.bind(this);
   }
 
   createTask(name) {
@@ -20,13 +21,16 @@ class App extends React.Component {
       list: [...this.state.list, task]
     })
   }
-
+  removeItem(id) {
+    const list = this.state.list.filter(el => (el.id !== id));
+    this.setState({ list: list })
+  }
   render() {
     return (
       <div className='container-xxl mt-5'>
         <h1 className='text-center mb-5'>React To do App</h1>
         <Input onCreate={this.createTask} />
-        <List list={this.state.list} />
+        <List list={this.state.list} removeItem={this.removeItem} />
       </div>
     )
   }

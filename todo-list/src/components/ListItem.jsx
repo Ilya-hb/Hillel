@@ -8,7 +8,7 @@ class ListItem extends Component {
         this.state = {
             backgroundColor: '',
             textDecoration: ''
-        }
+        }``
     }
 
     markDone() {
@@ -23,9 +23,11 @@ class ListItem extends Component {
                 textDecoration: ''
             });
         }
+        // console.log(this.props);
     }
     removeItem() {
         this.props.removeItem(this.props.id);
+        // console.log(this.props.id);
     }
     render() {
         return (

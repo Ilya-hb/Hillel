@@ -9,7 +9,7 @@ class List extends Component {
                 <ol className='list-group list-group-numbered'>
                     {
                         this.props.list.map((item) => {
-                            return <ListItem key={item.id} item={item} removeItem={this.props.removeItem}/>
+                            return <ListItem id={item.id} key={item.id} item={item} removeItem={this.props.removeItem} />
                         })
                     }
                 </ol>
