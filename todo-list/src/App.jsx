@@ -25,7 +25,7 @@ class App extends React.Component {
     return (
       <div className='container-xxl mt-5'>
         <h1 className='text-center mb-5'>React To do App</h1>
-        <Input onCreate={this.createTask}/>
+        <Input onCreate={this.createTask} />
         <List list={this.state.list} />
       </div>
     )

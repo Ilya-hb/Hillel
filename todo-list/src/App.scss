@@ -33,3 +33,16 @@ body {
   border-color: #ffffff;
   box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.25);
 }
+.list-container {
+}
+.list-btn {
+  right: 0;
+  top: 50%; 
+  transform: translate(2%, -50%); 
+  height: 42px;
+  border-radius: 0;
+}
+.list-group-item {
+  padding-right: 90px;
+
+}

@@ -7,10 +7,11 @@ class Input extends Component {
             value: ''
         };
 
-        this.onChange = this.onChange.bind(this);
+        this.addItem = this.addItem.bind(this);
         this.createTask = this.createTask.bind(this);
     }
-    onChange(e) {
+    addItem(e) {
+
         this.setState({
             value: e.target.value
         });
@@ -20,15 +21,16 @@ class Input extends Component {
     }
     render() {
         return (
-            <> <div className="input-group mb-3 justify-content-center">
-                <input type="text"
-                    className="form-control input text-center"
-                    placeholder="Write your ToDo's"
-                    onChange={this.onChange} />
-                <button className="btn inp-btn"
-                    type="button" id="button-addon2"
-                    onClick={this.createTask}>Add Task</button>
-            </div>
+            <>
+                <div className="input-group mb-3 justify-content-center">
+                    <input type="text"
+                        className="form-control input text-center"
+                        placeholder="Write your ToDo's"
+                        onChange={this.addItem} />
+                    <button className="btn inp-btn"
+                        type="button" id="button-addon2"
+                        onClick={this.createTask}>Add Task</button>
+                </div>
             </>
 
         )
